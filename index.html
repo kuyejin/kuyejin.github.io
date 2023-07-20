@@ -9,7 +9,7 @@
     <meta http-equiv="Copyright" content="copyright@chunjae.co.kr">
     <title>천재교육</title>
 
-    <!-- 검색엔진 최적화(SEO) dg-->
+    <!-- 검색엔진 최적화(SEO) -->
     <meta name="Subject" content="천재교육, 천재IT교육센터">
     <meta name="Keywords" content="천재교육, 천재 IT, 교육 교재, 교과서, 스마트 교육">
     <meta name="Description" content="천재교육은 교과서 제작, 교육 교재 제작, 초등, 중등, 고등 교육에 대한 교재와 교육을 실시하는 기관입니다.">
@@ -66,67 +66,8 @@
 
     <!-- 필요한 플러그인 연결 -->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <style>
-    /* 스타일 사용자 정의 초기화 */
-    * { margin: 0; padding: 0; }
-    body, html { width: 100%; font-family: 'Noto Sans KR'; overflow-x: hidden; 
-    -ms-overflow-style:none;     scrollbar-width:none;}
-    body::-webkit-scrollbar, html::-webkit-scrollbar { display:none; }
-
-    ul { list-style: none; }
-    a { text-decoration: none; color:#333; }
-    img { border:0; }
-    .wrap { clear:both; width: 100%; }
-    .wrap::after { content:""; display:block; width:100%; clear:both; }
-
-    </style>
-
-    <style>
-    /*
-    font-family: 'Noto Sans KR';
-    font-family: 'Happy';
-    font-family: 'Handon';
-    font-family: 'iceSotong';
-    */ 
-    /* 헤더 구역 스타일 */
-    .hd { clear:both; position:relative; width: 100%; height: 90px; }
-    .hd_wrap { clear: both; width: 100%;  }
-    .hd_wrap:first-child {  background-color: deepskyblue; border-bottom:1px solid #333; }
-    .hd_wrap:last-child { background-color: #fff; width: 1200px; 
-    margin: 0 auto; }
-
-    .tnb { width: 1200px; margin: 0 auto; }
-    .tnb::after { content:""; clear:both; display:block; width:100%; }
-    .tnb .menu { float:right; height: 40px; margin:auto; line-height: 40px; }
-    .tnb .menu li { float:left; padding-left: 40px; }
-
-    .logo { display:block; width:auto; height:50px; float:left; }
-    .logo img { display:block; width:auto; height: 100%; }
-    .gnb { width:900px; margin: 0 auto; float: right; height: 50px; }
-    .gnb::before { content:""; display:block; width:100vw; height:210px; 
-    background-color:rgba(255,255,255,0.75); position:absolute;
-    left: 0; top:90px; z-index:15; display:none; }
-    .gnb:hover::before { display:block; }
-    .gnb .menu { clear:both; height: 50px; position:relative; }
-    .gnb .menu::after { content:""; clear:both; width: 100%; display:block; } 
-    .gnb .menu li { float:left; width:20%; position:relative; height: 50px; }
-    .gnb .menu li .sub { visibility: hidden; opacity:0; position:absolute; width: 180px;
-         height: 200px; top:48px;  left: 0; z-index:999; transition:0.3s; }
-    .gnb .menu li a.dp1 { display:block; width:100%;
-        line-height: 50px; border-bottom:2px solid #fff;
-    text-align: center; background-color: #fff; color:#333; }
-    .gnb .menu li:hover a.dp1 { border-bottom:2px solid deepskyblue; 
-    background-color: deepskyblue; color:#fff; }
-    .gnb .menu:hover li .sub { visibility: visible; height: 240px; opacity:1; }
-    .gnb .menu li .sub li { padding-left:0px; line-height: 34px; clear:both; 
-    width:180px; }
-    .gnb .menu li .sub li a { display:block; 
-        width: 180px; text-align: center; line-height: 34px; 
-    white-space:nowrap; text-overflow: ellipsis; overflow:hidden; 
-padding-left: 8px; padding-right: 8px; box-sizing: border-box; }
-    .gnb .menu li .sub li:hover a { background-color:rgba(200,200,200,0.9); }
-    </style>
-
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="hd.css">
     <style>
     /* 본문 영역 스타일 */  
     .contents { clear:both; }
@@ -246,43 +187,7 @@ position:absolute; right:0; top: 0; border-bottom:1px solid #fff; transform-orig
     .sl-btn-box .btn.prev { top:148px; }
     </style>
 
-    <style>
-    /* 푸터 구역 스타일 */    
-    .ft { clear:both; width: 100%; box-shadow:0px -10px 30px #ccc; }
-    .ft::after { content:""; display:block; width: 100%; clear: both; }
-    .ft_wrap { clear:both; width: 100%; border-bottom:1px solid #eee; padding-bottom: 30px; 
-    padding-top: 30px; }
-    .ft_link { clear:both; width: 1200px; margin: 0 auto; }
-    .ft_link::after { content:""; display:block; width: 100%; clear: both; }
-    .fnb { float:left; }
-    .fnb::after { content:""; display:block; width: 100%; clear: both; }
-    .fnb li { float:left; }
-    .fnb li:nth-child(2)::after { content:"|"; padding-left: 30px; padding-right: 30px;  }
-    .snb { float:right; }
-    .snb::after { content:""; display:block; width: 100%; clear: both; }
-    .snb li { float:left; margin-left: 14px; background-repeat: no-repeat;
-    background-image: url("./images/ico_foot_sns.png"); margin-top:10px;
-    border-radius:20px; }
-    .snb li a { display:block; width: 34px; height: 34px; overflow:hidden; 
-    text-indent: -9999px; border-radius:20px; }
-    .snb li.item1 { background-position: 0 0; }
-    .snb li.item2 { background-position: -34px 0; }
-    .snb li.item3 { background-position: -68px 0; }
-    .snb li.item4 { background-position: -102px 0; }
-    .snb li.item5 { background-position: -136px 0; }
-
-    .snb li.locate { background-image: none; width: 200px; height: 34px; margin-top: 0; line-height: 48px; }
-    .snb li.locate option { display:block; height: 48px; line-height: 48px; min-height:48px;     }
-    .ft_link li { line-height: 48px; }
-    #sel { height: 34px; width: 200px; }
-
-    .ft_wrap2 { clear:both; width:1200px; margin: 0 auto; padding-bottom: 30px; padding-top: 30px; } 
-    .copyright { line-height:20px; font-size:12px; }
-    .copyright span::after { content:"|"; padding-left: 20px; padding-right: 20px; color:#ccc; }
-    .copyright span.end::after { content:""; padding-right: 0; }
-
-    .cp { font-size: 12px; color:#ccc; line-height: 20px; }
-    </style>
+    <link rel="stylesheet" href="ft.css">
 </head>
 <body>
     <div class="wrap">
@@ -290,9 +195,9 @@ position:absolute; right:0; top: 0; border-bottom:1px solid #fff; transform-orig
             <div class="hd_wrap">
                 <nav class="tnb">
                     <ul class="menu">
-                        <li><a href="">상단1</a></li>
-                        <li><a href="">상단2</a></li>
-                        <li><a href="">상단3</a></li>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                        <li><a href="map.html">오시는길</a></li>
                     </ul>
                 </nav>
             </div>
@@ -300,52 +205,49 @@ position:absolute; right:0; top: 0; border-bottom:1px solid #fff; transform-orig
                 <a href="index.html" class="logo">
                     <img src="./images/chunjae1.png" alt="천재IT교육센터 로고타입">
                 </a>
-                <!-- nav.gnb>ul.menu>li.item$*5>a.dp1{메인$}+(ul.sub>li*4>a{서브$$}) -->
                 <nav class="gnb">
                     <ul class="menu">
                         <li class="item1">
-                            <a href="" class="dp1">메인1</a>
+                            <a href="company.html" class="dp1">회사소개</a>
                             <ul class="sub">
-                                <li><a href="">서브01</a></li>
-                                <li><a href="">서브02</a></li>
-                                <li><a href="">서브03 서브03 서브03 서브03 서브03</a></li>
-                                <li><a href="">서브04</a></li>
+                                <li><a href="company.html#com">회사개요</a></li>
+                                <li><a href="company.html#greet">인사말</a></li>
+                                <li><a href="company.html#history">연혁</a></li>
+                                <li><a href="company.html#map">오시는길</a></li>
                             </ul>
                         </li>
                         <li class="item2">
-                            <a href="" class="dp1">메인2</a>
+                            <a href="biz.html" class="dp1">사업영역</a>
                             <ul class="sub">
-                                <li><a href="">서브01</a></li>
-                                <li><a href="">서브02</a></li>
-                                <li><a href="">서브03</a></li>
-                                <li><a href="">서브04</a></li>
+                                <li><a href="biz.html#text">교과서</a></li>
+                                <li><a href="biz.html#ref">참고서</a></li>
+                                <li><a href="biz.html#smart">스마트교육</a></li>
+                                <li><a href="biz.html#edu">에듀테크</a></li>
                             </ul>
                         </li>
                         <li class="item3">
-                            <a href="" class="dp1">메인3</a>
+                            <a href="social.html" class="dp1">사회공헌</a>
                             <ul class="sub">
-                                <li><a href="">서브01</a></li>
-                                <li><a href="">서브02</a></li>
-                                <li><a href="">서브03</a></li>
-                                <li><a href="">서브04</a></li>
+                                <li><a href="social.html#serve">학습봉사</a></li>
+                                <li><a href="social.html#support">지역사회후원</a></li>
+                                <li><a href="social.html#academy">학회지원</a></li>
+                                <li><a href="social.html#school">공교육지원</a></li>
                             </ul>
                         </li>
                         <li class="item4">
-                            <a href="" class="dp1">메인4</a>
+                            <a href="promotion.html" class="dp1">홍보</a>
                             <ul class="sub">
-                                <li><a href="">서브01</a></li>
-                                <li><a href="">서브02</a></li>
-                                <li><a href="">서브03</a></li>
-                                <li><a href="">서브04</a></li>
+                                <li><a href="promotion.html#news">언론보도</a></li>
+                                <li><a href="promotion.html#pr">광고</a></li>
+                                <li><a href="promotion.html#sns">SNS</a></li>
+                                <li><a href="promotion.html#story">천재이야기</a></li>
                             </ul>
                         </li>
                         <li class="item5">
-                            <a href="" class="dp1">메인5</a>
+                            <a href="brand.html" class="dp1">브랜드</a>
                             <ul class="sub">
-                                <li><a href="">서브01</a></li>
-                                <li><a href="">서브02</a></li>
-                                <li><a href="">서브03</a></li>
-                                <li><a href="">서브04</a></li>
+                                <li><a href="brand.html#intro">브랜드 소개</a></li>
+                                <li><a href="brand.html#organizion">유관 기관</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -608,6 +510,6 @@ position:absolute; right:0; top: 0; border-bottom:1px solid #fff; transform-orig
         </footer>
     </div>
     <!-- 문서 위로 이동 -->
-
+    <a href="#" class="totop">↑</a>
 </body>
 </html>
